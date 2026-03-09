@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<nav class="sidebar" id="sidebar">
+    <h2 class="logo">Vidyashri</h2>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="projects.html">Projects</a>
+<a href="education.html">Education</a>
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Contact</h2>
+
+<p>Email:
+<a href="mailto:vidya@email.com">
+vidya@gmail.com
+</a>
+</p>
+
+<p>Phone: +91 9876543210</p>
+
+<form onsubmit="return validateForm()">
+
+<input type="text" id="name" placeholder="Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<button>Send</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

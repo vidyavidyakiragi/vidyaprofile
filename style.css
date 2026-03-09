@@ -1,0 +1,244 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+/* Background */
+body{
+background:linear-gradient(
+135deg,
+#000000,
+#0a0a0a,
+#120012
+);
+color:white;
+}
+
+/* Sidebar */
+.sidebar{
+position:fixed;
+width:240px;
+height:100%;
+background:rgba(20,20,20,0.7);
+backdrop-filter:blur(15px);
+padding-top:30px;
+border-right:1px solid #ff2f92;
+}
+
+.logo{
+text-align:center;
+margin-bottom:30px;
+color:#ff2f92;
+}
+
+.sidebar a{
+display:block;
+padding:14px 25px;
+text-decoration:none;
+color:white;
+transition:.4s;
+}
+
+.sidebar a:hover{
+background:#ff2f92;
+color:black;
+transform:translateX(8px);
+}
+
+/* Menu button */
+.menu-btn{
+display:none;
+position:fixed;
+top:15px;
+left:15px;
+background:#ff2f92;
+border:none;
+padding:10px;
+color:white;
+border-radius:6px;
+font-size:18px;
+z-index:1000;
+}
+
+/* Main Container */
+.container{
+margin-left:260px;
+padding:40px;
+}
+
+/* Glass Card */
+.card{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+border-radius:20px;
+padding:35px;
+margin-bottom:30px;
+border:1px solid rgba(255,47,146,.4);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 30px rgba(255,47,146,.5);
+}
+
+/* Hero Section */
+.hero{
+text-align:center;
+}
+
+/* Profile Image */
+.profile{
+width:170px;
+height:170px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #ff2f92;
+box-shadow:
+0 0 20px #ff2f92,
+0 0 40px #ff2f92;
+margin-bottom:20px;
+}
+
+/* Heading */
+h1{
+font-size:34px;
+margin-bottom:10px;
+}
+
+h2{
+color:#ff2f92;
+margin-bottom:15px;
+}
+
+/* Skills Grid */
+.skills-grid{
+
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(160px,1fr));
+
+gap:25px;
+margin-top:25px;
+
+}
+
+/* Skill Card */
+.skill-card{
+
+background:rgba(255,255,255,0.05);
+padding:25px;
+text-align:center;
+
+border-radius:15px;
+
+transition:.4s;
+
+border:1px solid rgba(255,47,146,.4);
+
+}
+
+/* Logo */
+.skill-card i{
+
+font-size:45px;
+color:#ff2f92;
+margin-bottom:10px;
+transition:.4s;
+
+}
+
+/* Hover */
+.skill-card:hover{
+
+background:#ff2f92;
+color:black;
+
+transform:translateY(-10px);
+
+box-shadow:
+0 0 25px #ff2f92,
+0 0 40px rgba(255,47,146,.5);
+
+}
+
+.skill-card:hover i{
+
+color:black;
+transform:scale(1.2);
+
+}
+/* Projects */
+.project-card{
+background:#111;
+padding:20px;
+border-radius:15px;
+margin-top:15px;
+transition:.4s;
+}
+
+.project-card:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px #ff2f92;
+}
+
+/* Contact */
+input,button{
+width:100%;
+padding:12px;
+margin-top:12px;
+border-radius:8px;
+border:none;
+}
+
+input{
+background:#111;
+color:white;
+}
+
+button{
+background:#ff2f92;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:white;
+color:black;
+}
+
+/* Links */
+a{
+color:#ff2f92;
+text-decoration:none;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.sidebar{
+left:-240px;
+transition:.4s;
+}
+
+.sidebar.active{
+left:0;
+}
+
+.menu-btn{
+display:block;
+}
+
+.container{
+margin-left:0;
+padding:25px;
+}
+
+}
